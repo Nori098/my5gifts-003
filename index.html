@@ -173,7 +173,7 @@ html, body {
   <div class="counter" id="counter">1 / 13</div>
 
   <a
-    href="https://drive.google.com/file/d/1jiGaba8H41Y-QbzUgw7iygW8gfO7U7af/view?usp=sharing"
+    href="https://drive.google.com/file/d/1vo7paKTS7A71M3_IPfRBBOcErUPa9XWI/view?usp=drive_link"
     target="_blank"
     rel="noopener noreferrer"
     class="pdf-button"
@@ -205,7 +205,7 @@ const pdfButton = document.getElementById("pdfButton");
 
 
 /* =========================
-   01.jpg〜13.jpgを自動生成
+   01.png〜13.pngを自動生成
 ========================= */
 
 for (let i = 1; i <= totalPages; i++) {
@@ -218,7 +218,7 @@ for (let i = 1; i <= totalPages; i++) {
   const fileNumber =
     String(i).padStart(2, "0");
 
-  img.src = `${fileNumber}.jpg`;
+  img.src = `${fileNumber}.png`;
   img.alt = `${i}ページ`;
 
   page.appendChild(img);
