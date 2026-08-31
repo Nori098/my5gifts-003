@@ -215,10 +215,7 @@ for (let i = 1; i <= totalPages; i++) {
 
   const img = document.createElement("img");
 
-  const fileNumber =
-    String(i).padStart(2, "0");
-
-  img.src = `${fileNumber}.png`;
+ img.src = `${i}.png`;
   img.alt = `${i}ページ`;
 
   page.appendChild(img);
